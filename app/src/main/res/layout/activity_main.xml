@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+         android:layout_height="fill_parent"
+         android:orientation="vertical">
+    tools:context="com.example.joe.myapplication.MainActivity">
+    <TextView
+             android:id="@+id/timeId"
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             android:gravity="center_horizontal"
+             android:layout_marginTop="10dp"
+             android:text="00:00  AM" />
+
+         <TableLayout
+             android:id="@+id/tableLayout1"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginTop="10dp">
+
+             <TableRow
+                 android:id="@+id/tableRow1"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content" >
+
+                 <TextView
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_marginLeft="15dp"
+                     android:layout_weight="1.0"
+                     android:textSize="20sp"
+                     android:text="只響1次的鬧鐘" />
+                 <Button
+                     android:id="@+id/onceSetId"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_marginRight="10dp"
+                     android:layout_weight="1.0"
+                     android:text="鬧鐘設定" />
+             </TableRow>
+
+             <TableRow
+                 android:id="@+id/tableRow2"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content" >
+
+                 <TextView
+                     android:id="@+id/onceTextId"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_marginLeft="15dp"
+                     android:layout_weight="1.0"
+                     android:textSize="20sp"
+                     android:text="無設定" />
+
+                 <Button
+                     android:id="@+id/onceDeleId"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_marginRight="10dp"
+                     android:layout_weight="1.0"
+                     android:text="刪除鬧鐘" />
+             </TableRow>
+
+             <TableRow
+                 android:id="@+id/tableRow3"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_marginTop="25dp">
+
+                 <TextView
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_marginLeft="15dp"
+                     android:layout_weight="1.0"
+                     android:textSize="20sp"
+                     android:text="重複響的鬧鐘" />
+
+                 <Button
+                     android:id="@+id/timesSetId"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_marginRight="10dp"
+                     android:layout_weight="1.0"
+                     android:text="設定鬧鐘" />
+             </TableRow>
+
+             <TableRow
+                 android:id="@+id/tableRow4"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content" >
+
+                 <TextView
+                     android:id="@+id/timesTextId"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_marginLeft="15dp"
+                     android:layout_weight="1.0"
+                     android:textSize="20sp"
+                     android:text="無設定" />
+
+                 <Button
+                     android:id="@+id/timesDeleId"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_marginRight="10dp"
+                     android:layout_weight="1.0"
+                     android:text="刪除鬧鐘" />
+             </TableRow>
+         </TableLayout>
+
+
+</LinearLayout>
